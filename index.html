@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zafari Sales</title>
-    <link rel="shortcut icon" type="image/png" href="./img/Favicon_01.png"/>
+    <title>Studio Zafari | Explore</title>
+    <link rel="shortcut icon" type="image/png" href="img/64w/Favicon_01.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,800" rel="stylesheet">
     <style>
       :root{
@@ -16,7 +17,8 @@
       }
       *{
         font-family: 'Work Sans', sans-serif;
-        transition: all 1s
+        transition: all 1s;
+        text-decoration: none;
       }
       body{
         background-color: var(--dark, #25003d);
@@ -29,8 +31,15 @@
       h1{
         color:white;
         font-size: 4.5em;
-        margin: 20px 0px;
+        margin: 0px 0px;
         font-weight: 900;
+      }
+      h4{
+        margin: 5px 0px;
+        font-size: 1.5em;
+      }
+      p{
+        margin: 5px 0px;
       }
       span{
         color: var(--green);
@@ -42,36 +51,142 @@
         text-align: center;
         color: white;
         margin-top: 30px;
-
       }
       .btn:hover {
         background-color: var(--purple);
       }
-      #myVideo{
-        position: fixed;
-        right: calc(-960px + 50vw);
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -2;
-        top:0px;
-        opacity: 0.8;
+      .vid-box{
+        width: 400px;
+        height: 200px;
+        top: 0px;
+        margin:auto;
+      }
+      .vid-thumb{
+        width: 100%;
+        box-shadow: 0px 0px 30px #00000080;
+        position: relative;
+        top: 0px;
+        border: 0px;
+        border-style: solid;
+        border-color: var(--purple);
+      }
+      .vid-thumb:hover{
+        top: 0px
+      }
+      .banner-overlay{
+        width: 100%;
+        height: 150px;
+        background-image: linear-gradient(180deg, #24003d00, #24003d);
+      }
+      .cnt-bx{
+        background-color: #00000040;
+        height: 200px;
+        opacity: 0;
+        color: white;
+      }
+      .cnt-bx h2{
+        margin: 0;
+      }
+      .cnt-bx h5{
+        margin: 0;
+        font-size: 1.2em;
+        font-weight: 100;
+      }
+      .vid-gall{
+        width: 1200px;
+        height:100%;
+        margin: auto;
+        display: flex;
+        position: relative;
+        top:-50px;
+        flex-wrap: wrap;
+      }
+      .vid-box:hover .cnt-bx{
+        opacity: 1;
+      }
+      a{
+        margin: auto;
+      }
+
+      @media (max-width: 1200px){
+        .vid-gall{
+          width: 800px;
+        }
+      }
+      @media (max-width: 800px){
+        .vid-gall{
+          width: 600px;
+        }
+        .vid-box{
+          width: 600px;
+          height: 300px;
+        }
       }
       </style>
   </head>
-  <body>
-    <section style="height:100%; width: 100%; background-image: url('./img/frame_309.jpg'); background-repeat: no-repeat;
+  <body style="background-color: #25003d;">
+    <section style="height:100%; width: 100%; background-image: url('../img/frame_309.jpg'); background-repeat: no-repeat;
     background-size: cover;">
         <div class="" style="background-color: #20202052">
-          <div class="" style="padding: 150px 10% 50px 10%;">
-            <a href="www.studiozafari.com"><img src="./img/Zafari_Icon_02.png" alt="Zafari Logo" style="width:100px; margin: 10px 0px;"/></a>
+          <div class="" style="padding: 120px 10% 50px 10%;">
+            <a href="https://www.studiozafari.com"><img src="img/Zafari_Icon_02.png" alt="Zafari Logo" style="width:100px; margin: 10px 0px;"/></a>
             <h1>Studio Zafari<span>.</span></h1>
             <p>Educational prodcution that helps tell stories and share your knowledge.</p>
-            <div class="btn"style="">Start Watching</div>
+            <a data-fancybox href="https://www.youtube.com/watch?v=52zEnwqH5IM">
+              <div class="btn"style="">Start Watching</div>
+            </a>
           </div>
-          <div class="" style="width: 100%; height: 150px; background-image: linear-gradient(180deg, #24003d00, #24003d);"></div>
+          <div class="banner-overlay" style=""></div>
         </div>
-
     </section>
+    <section style="">
+      <div class="vid-gall" style="">
+        <a data-fancybox href="https://vimeo.com/323107042?autoplay=1&loop=1&autopause=0">
+          <div class="vid-box" style="background-image: url('../img/frame_923.jpg'); background-size: cover; background-position: center;">
+            <div class="cnt-bx" style="">
+              <div style="padding: 50px">
+                <h2>Campaigning Excellence</h2>
+                <h5>UK Government</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://www.youtube.com/watch?v=52zEnwqH5IM">
+          <div class="vid-box" style="background-image: url('../img/frame_400.png'); background-size: cover; background-position: center;">
+            <div class="cnt-bx" style="">
+              <div style="padding: 50px">
+                <h2>Data Privacy</h2>
+                <h5>What is a Cookie?</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://vimeo.com/323104471?autoplay=1&loop=1&autopause=0">
+          <div class="vid-box" style="background-image: url('../img/Frame_CC_001.png'); background-size: cover; background-position: center;">
+            <div class="cnt-bx" style="">
+              <div style="padding: 50px">
+                <h2>Crisi Communications</h2>
+                <h5>UK Government</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://player.vimeo.com/video/323104344?autoplay=1&loop=1&autopause=0">
+          <div class="vid-box" style="background-image: url('../img/Frame_NC_001.png'); background-size: cover; background-position: center;">
+            <div class="cnt-bx" style="">
+              <div style="padding: 50px">
+                <h2>What is DMARC?</h2>
+                <h5>National Cyber Security Center</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.min.js"
+    integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
   </body>
 </html>
