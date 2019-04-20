@@ -5,7 +5,7 @@
     <meta name="robots" content="noindex">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Studio Zafari | Explore</title>
-    <link rel="shortcut icon" type="image/png" href="img/Favicon_01.png"/>
+    <link rel="shortcut icon" type="image/png" href="img/64w/Favicon_01.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700,800" rel="stylesheet">
     <style>
@@ -60,18 +60,14 @@
         height: 200px;
         top: 0px;
         margin:auto;
+        background-size: cover;
+        background-position: center;
       }
-      .vid-thumb{
-        width: 100%;
-        box-shadow: 0px 0px 30px #00000080;
-        position: relative;
+      .vid-box-mid{
+        width: 600px;
+        height: 300px;
         top: 0px;
-        border: 0px;
-        border-style: solid;
-        border-color: var(--purple);
-      }
-      .vid-thumb:hover{
-        top: 0px
+        margin:auto;
       }
       .banner-overlay{
         width: 100%;
@@ -79,7 +75,7 @@
         background-image: linear-gradient(180deg, #24003d00, #24003d);
       }
       .cnt-bx{
-        background-color: #00000040;
+        background-color: #00000080;
         height: 200px;
         opacity: 0;
         color: white;
@@ -92,6 +88,10 @@
         font-size: 1.2em;
         font-weight: 100;
       }
+      .cnt-bx div{
+        padding-top:10%;
+        padding-left: 0%
+      }
       .vid-gall{
         width: 1200px;
         height:100%;
@@ -101,13 +101,51 @@
         top:-50px;
         flex-wrap: wrap;
       }
+      #vb-01{
+        background-image: url('../img/frame_923.jpg');
+      }
+      #vb-01:hover{
+        background-image: url('../img/Zafari_Logo_Animation_16x9_02.gif');
+      }
+      #vb-02{
+        background-image: url('../img/frame_400.png');
+      }
+      #vb-02:hover{
+        background-image: url('../img/Zafari_Logo_Animation_16x9_02.gif');
+      }
+      #vb-03{
+        background-image: url('../img/Frame_CC_001.png');
+      }
+      #vb-03:hover{
+        background-image: url('../img/Zafari_Logo_Animation_16x9_02.gif');
+      }
+      #vb-04{
+        background-image: url('../img/Frame_NC_001.png');
+      }
+      #vb-04:hover{
+        background-image: url('../img/Zafari_Logo_Animation_16x9_02.gif');
+      }
+      #vb-05{
+        background-image: url('../img/Frame_CE_002.jpg');
+      }
+      #vb-05:hover{
+        background-image: url('../img/Zafari_Logo_Animation_16x9_02.gif');
+      }
+      #vb-06{
+        background-image: url('../img/Frame_BC_001.jpg');
+      }
+      #vb-06:hover{
+        background-image: url('../img/Zafari_Logo_Animation_16x9_02.gif');
+      }
       .vid-box:hover .cnt-bx{
         opacity: 1;
       }
-      a{
-        margin: auto;
+      .vid-box:hover .cnt-bx div{
+        padding-left: 10%
       }
-
+      a{
+        /* margin: auto; */
+      }
       @media (max-width: 1200px){
         .vid-gall{
           width: 800px;
@@ -121,6 +159,11 @@
           width: 600px;
           height: 300px;
         }
+        .cnt-bx{
+          background-color: #00000080;
+          height: 300px;
+        }
+
       }
       </style>
   </head>
@@ -142,9 +185,9 @@
     <section style="">
       <div class="vid-gall" style="">
         <a data-fancybox href="https://vimeo.com/323107042?autoplay=1&loop=1&autopause=0">
-          <div class="vid-box" style="background-image: url('../img/frame_923.jpg'); background-size: cover; background-position: center;">
+          <div class="vid-box" id="vb-01" style="">
             <div class="cnt-bx" style="">
-              <div style="padding: 50px">
+              <div style="">
                 <h2>Campaigning Excellence</h2>
                 <h5>UK Government</h5>
               </div>
@@ -152,9 +195,9 @@
           </div>
         </a>
         <a data-fancybox href="https://www.youtube.com/watch?v=52zEnwqH5IM">
-          <div class="vid-box" style="background-image: url('../img/Frame_400.jpg'); background-size: cover; background-position: center;">
+          <div class="vid-box" id="vb-02" style="">
             <div class="cnt-bx" style="">
-              <div style="padding: 50px">
+              <div style="">
                 <h2>Data Privacy</h2>
                 <h5>What is a Cookie?</h5>
               </div>
@@ -162,9 +205,9 @@
           </div>
         </a>
         <a data-fancybox href="https://vimeo.com/323104471?autoplay=1&loop=1&autopause=0">
-          <div class="vid-box" style="background-image: url('../img/Frame_CC_001.jpg'); background-size: cover; background-position: center;">
+          <div class="vid-box" id="vb-03" style="">
             <div class="cnt-bx" style="">
-              <div style="padding: 50px">
+              <div style="">
                 <h2>Crisi Communications</h2>
                 <h5>UK Government</h5>
               </div>
@@ -172,11 +215,31 @@
           </div>
         </a>
         <a data-fancybox href="https://player.vimeo.com/video/323104344?autoplay=1&loop=1&autopause=0">
-          <div class="vid-box" style="background-image: url('../img/Frame_NC_001.jpg'); background-size: cover; background-position: center;">
+          <div class="vid-box" id="vb-04" style="">
             <div class="cnt-bx" style="">
-              <div style="padding: 50px">
+              <div style="">
                 <h2>What is DMARC?</h2>
                 <h5>National Cyber Security Center</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://player.vimeo.com/video/323104622?autoplay=1&loop=1&autopause=0">
+          <div class="vid-box" id="vb-05" style="">
+            <div class="cnt-bx" style="">
+              <div style="">
+                <h2>CE: Promo</h2>
+                <h5>UK Government</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a data-fancybox href="https://player.vimeo.com/video/323104241?autoplay=1&loop=1&autopause=0">
+          <div class="vid-box" id="vb-06" style="">
+            <div class="cnt-bx" style="">
+              <div style="">
+                <h2>Blockchain</h2>
+                <h5>Barclays</h5>
               </div>
             </div>
           </div>
